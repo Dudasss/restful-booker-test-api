@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: BookingTests
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 10.202 s <<< FAILURE! - in BookingTests
+createBooking_withValidDate_returnNotFound  Time elapsed: 1.023 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at BookingTests.createBooking_withValidDate_returnNotFound(BookingTests.java:126)
+
+updateBooking_withValidDate_returnOK  Time elapsed: 0.643 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <403>.
+
+	at BookingTests.updateBooking_withValidDate_returnOK(BookingTests.java:144)
+
+partialUpdateBooking_withValidDate_returnOK  Time elapsed: 0.647 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <403>.
+
+	at BookingTests.partialUpdateBooking_withValidDate_returnOK(BookingTests.java:162)
+
+deleteBooking_BookingExist_returnOK  Time elapsed: 0.646 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <403>.
+
+	at BookingTests.deleteBooking_BookingExist_returnOK(BookingTests.java:178)
+
